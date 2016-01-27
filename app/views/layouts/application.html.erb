@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul class="nav nav-tabs">
+    <li role="presentation"><%= link_to "Home", root_path %></li>
+    <li role="presentation"><%= link_to "Students", students_path %></li>
+    <li role="presentation"><%= link_to "Courses", courses_path %></li>
+    <li role="presentation"><%= link_to "Vinculate", new_classroom_path %></li>
+  </ul>
 
-<%= yield %>
+  <div class="container center">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
