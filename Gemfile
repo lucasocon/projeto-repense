@@ -67,5 +67,4 @@ group :test do
   gem 'fakeweb', '~> 1.3.0'
 end
 
-group :production do
-end
+gem 'rails_12factor', group: :production
