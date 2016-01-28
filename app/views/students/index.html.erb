@@ -1,31 +1,34 @@
-<p id="notice"><%= notice %></p>
+<div class="margtop">
+  <p id="notice"><%= notice %></p>
 
-<h1>All Students</h1>
+  <h1>All Students</h1>
 
-<table class="table table-responsive">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Register number</th>
-      <th>Status</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @students.each do |student| %>
+  <table class="table table-responsive">
+    <thead>
       <tr>
-        <td><%= student.name %></td>
-        <td><%= student.register_number %></td>
-        <td><%= student.status %></td>
-        <td><%= link_to 'Show', student, class: 'btn btn-primary' %></td>
-        <td><%= link_to 'Edit', edit_student_path(student), class: 'btn btn-primary' %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <th>Name</th>
+        <th>Register number</th>
+        <th>Status</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @students.each do |student| %>
+        <tr>
+          <td><%= student.name %></td>
+          <td><%= student.register_number %></td>
+          <td><%= student.status %></td>
+          <td><%= link_to 'Show', student, class: 'btn btn-primary' %></td>
+          <td><%= link_to 'Edit', edit_student_path(student), class: 'btn btn-primary' %></td>
+          <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Student', new_student_path, class: 'btn btn-primary' %>
+  <br>
+
+  <%= link_to 'New Student', new_student_path, class: 'btn btn-primary' %>
+
+</div>

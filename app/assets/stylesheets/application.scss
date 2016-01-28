@@ -13,7 +13,67 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-.center {
-    text-align:center;
+body{
+  font-family: roboto;
+}
+h1,td{
+  font-weight: lighter;
+  color: #FFFFFA;
+}
+th, label, strong{
+  font-weight: bold;
+  color: #FFFFFA;
+}
+.margtop{
+  margin-top: 100px;
+}
+.nav-tabs > li > a {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left:10px;
+  margin-right: 10px;
+  color: #FFFFFA;
+  transition: all 0.2s ease;
+}
+.nav-tabs > li > a:hover {
+  margin-left:10px;
+  margin-right: 10px;
+  color: #024959;
+  border-radius:20px;
+}
+#backcolor{
+  margin: 0!important;
+  height: 100vh;
+  background: #F24C27;
+}
+#title{
+  color: #FFFFFA;
+  font-weight:lighter;
+  font-size:55px!important;
+  margin: 100px auto 50px auto;
+}
+.nav{
+  padding-top: 7px;
+  height: 55px;
+  border:none;
+  background:#024959!important
+}
+.btn{
+  font-size: 17px;
+  box-shadow:1px 2px 1px #000;
+  margin-top: 5px;
+  border:none;
+  padding: 10px 20px;
+  transition:all 0.3s ease;
+}
+.btn-default{
+  margin-top: 30px;
+  background:#FFFFFA;
+}
+.btn:hover{
+  background: #024959;
+  color:#FFFFFA;
+}
+.btn-primary{
+  color:#0244959;
 }

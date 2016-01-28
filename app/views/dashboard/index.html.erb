@@ -1,16 +1,22 @@
-<h1>Welcome!</h1>
-<div class="row">
-  <div class="col-sm-12">
-    <%= link_to "Create Student", new_student_path, class: 'btn btn-default' %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+    <h1 id="title">Bem-vindo!</h1>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-sm-12">
-    <%= link_to "Create Course", new_course_path, class: 'btn btn-default' %>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 text-center">
+      <%= link_to "Criar Estudante", new_student_path, class: 'btn btn-default' %>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-sm-12">
-    <%= link_to "Vinculate", new_classroom_path, class: 'btn btn-default' %>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 text-center">
+      <%= link_to "Criação de Cursos", new_course_path, class: 'btn btn-default' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 text-center">
+      <%= link_to "Vinculate", new_classroom_path, class: 'btn btn-default' %>
+    </div>
   </div>
 </div>
