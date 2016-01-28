@@ -1,0 +1,21 @@
+<div class="margtop">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @course.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @course.description %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= @course.status %>
+  </p>
+
+  <button class="btn btn-default"><%= link_to 'Edit', edit_course_path(@course) %></button>
+  <button class="btn btn-default"><%= link_to 'Back', courses_path %></button>
+</div>

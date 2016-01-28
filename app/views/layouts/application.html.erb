@@ -5,10 +5,19 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <ul class="nav nav-tabs navbar-fixed-top">
+    <li role="presentation"><%= link_to "Home", root_path %></li>
+    <li role="presentation"><%= link_to "Estudantes", students_path %></li>
+    <li role="presentation"><%= link_to "Cursos", courses_path %></li>
+    <li role="presentation"><%= link_to "Vinculate", new_classroom_path %></li>
+  </ul>
 
-<%= yield %>
+  <div class="container-fluid" id="backcolor">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
