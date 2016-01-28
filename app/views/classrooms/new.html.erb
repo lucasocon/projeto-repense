@@ -11,13 +11,24 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= f.association :student, collection: @students, class: "form-control" %>
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="form-group">
+        <%= f.association :student, collection: @students %>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="form-group">
+        <%= f.association :course, collection: @courses %>
+      </div>
+    </div>
   </div>
+
   <div class="form-group">
-    <%= f.association :course, collection: @courses, class: "form-control" %>
+    <%= f.input :entry_at, as: :datetime %>
   </div>
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.button :submit %>
   </div>
 <% end %>
